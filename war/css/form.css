@@ -1,0 +1,41 @@
+
+
+ul.form {
+    list-style-type:none;
+}
+
+li.form {
+    width:70%;
+    clear: both;
+    position: relative;
+    padding: 0.5em 0.5em 12px;
+}
+
+input.form {
+    width: 70%;
+}
+
+input.title {
+    padding: 2px;
+    width: 70%;
+    font-size:11pt;
+    color:#333;
+}
+
+label.form {
+    display:block;
+    line-height: 150%;
+    white-space:normal;
+    margin:0px;
+    color: #777;
+    font-size:10pt;
+    font-weight:bold;
+}
+
+li.form textarea {
+    width: 70%;
+    height: 12em;
+    padding: 5px;
+    color:#333;
+    font-size:10pt;
+}

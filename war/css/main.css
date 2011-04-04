@@ -1,0 +1,48 @@
+#container { margin: 0 auto; }
+
+body {
+	font-family: Arial;
+	margin: 0px;
+}
+
+h1 {
+	color: #00B945;
+}
+
+.head_block {
+    background: #24913C;
+    display:block;
+    padding: 1em;
+    height:45px;
+    box-shadow:-1px 1px 3px rgba(0, 0, 0, 0, 5);    
+}
+
+.nav_bar {
+ //   background: #24913C;
+    background: #333;
+    padding: 0.2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color:#f3f3f3;
+    font-weight:bold;
+    font-size:10pt;
+    text-align:right;
+}
+
+.body_content {
+    text-align:left;
+    padding-top:2em;
+}
+
+.page_title {
+    padding-left:1.3em;
+}
+
+span.logo {
+    font-family:'Oswald', arial, serif;
+    font-size:26pt;
+    font-weight:bold;
+    color:#fff;
+    padding-left:1.3em;
+}
+

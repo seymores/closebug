@@ -1,0 +1,95 @@
+
+body {
+    background: url(/images/bg.jpg) #B2CCCC;
+}
+
+.notes {
+    float: left;   
+    margin-right: 20px;
+}
+
+#notes li {
+    position: relative;
+    width: 250px;
+    min-height: 100px;
+    margin: 20px auto 40px;
+    padding: 15px;
+    background: #f1f3a2;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(247,247,210,1)), to(rgba(240,242,155,1)));
+    background: -moz-linear-gradient(top, rgba(247,247,210,1), rgba(240,242,155,1));
+    list-style-type: none;
+    -webkit-box-shadow: 0 2px 12px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 2px 12px (rgba(0,0,0.5));
+    box-shadow: 0 8px 12px #000;
+    -webkit-transform: rotate(-.5deg);
+    -moz-transform: rotate(-.5deg);
+    -o-transform: rotate(-.5deg);     
+}
+
+#notes li:nth-child(even) {
+    -webkit-transform: rotate(.5deg);
+    -moz-transform: rotate(.5deg);
+    -o-transform: rotate(.5deg);     
+}
+
+#notes li p {
+    text-align: center;
+   /*font: normal normal normal 30px/38px 'Reenie Beanie', Helvetica, Arial, sans-serif; */
+    font: normal normal normal 35px/42px 'Just Me Again Down Here', Helvetica, Arial, sans-serif;
+    color: #000;
+    text-shadow: white 1px 1px 0px;
+    overflow:hidden;
+}
+
+#notes li::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 105px;
+    top: -15px;
+    width: 70px;
+    height: 25px;
+    z-index: 2;
+    background-color: rgba(243,245,228,0.5);
+    border: 2px solid rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0 0 5px #888;
+    -moz-box-shadow: 0 0 5px #888;
+    box-shadow: 2px 2px 2px #000;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+}
+
+#notes li:nth-child(even)::before {
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+}
+
+li.ui-placeholder {
+    opacity: 0.75;
+    background-image: none;
+}
+
+.notes li,
+.ui-placeholder {
+    position: relative;
+    width: 300px;
+    min-height: 100px;
+    margin: 25px auto;
+    padding: 60px 15px 15px 15px;
+    background: #fff url(http://our.fogbugz.com/images/tbKiwiLogo.gif) no-repeat 4px 8px;
+    -webkit-box-shadow: 0 2px 12px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 2px 12px rgba(0,0,0,.5);
+    box-shadow: 0 1px 2px #000;
+    -webkit-transform: rotate(-.5deg);
+    -moz-transform: rotate(-.5deg);
+    -o-transform: rotate(-.5deg);     
+}
+
+textarea#editable {
+ border: 0px;
+ background: transparent;
+ font-size:13pt;
+ height:80px;
+}
