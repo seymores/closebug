@@ -3,9 +3,9 @@
     
     <div class="container_12 body_content">
 
-    <h1 class="page_title">New Bug - CloseBug</h1>
+    <h1 class="page_title">Submit new bug</h1>
 
-    <form action="post" action="">
+    <form method="post" action="/create">
         <ul class="form">
             <li class="form">
                 <label for="title" id="title" class="form"> Title </label>
@@ -30,6 +30,8 @@
             
             <li class="form">
                 <input class="form_submit" type="submit" value="Submit"></input>
+                or 
+                <a href="/list">Cancel</a>
             </li>
 
 

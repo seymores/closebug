@@ -4,4 +4,12 @@ get "/upload",  forward: "/upload.gtpl"
 get "/success", forward: "/success.gtpl"
 get "/failure", forward: "/failure.gtpl"
 
-get "/favicon.ico", redirect: "/images/gaelyk-small-favicon.png"
+
+get "/add", forward: "/add.gtpl"
+get "/list", forward: "/list.groovy"
+
+post "/create", forward: "/create.groovy"
+
+get "/@sheetkey/add", forward: "/add.gtpl?sheetkey=@sheetkey"
+
+get "/favicon.ico", redirect: "/images/favicon.png"
