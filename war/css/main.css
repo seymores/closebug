@@ -2,6 +2,7 @@ body {
 	font-family: Arial;
 	margin: 0px;
     background: #f5f5f5;
+    min-height: 600px;
 }
 
 h1 {
@@ -53,7 +54,7 @@ a:hover {
 }
 
 table.listing {
-    width:90%;
+    width:100%;
 }
 
 a.button{
@@ -87,6 +88,70 @@ div.button {
     background: #e5e5e5;
     padding: 5px;
     width:120px;
+}
+
+table.listing {
+     border-collapse: collapse; 
+     width: 98%;
+}
+
+table.listing tr {
+    height: 20px;
+}
+
+table.listing td {
+    padding: 3px 10px 0.8em 3px;
+}
+
+tr.even {
+    background-color: #eee;
+}
+
+td.mark_row {
+    vertical-align:middle;
+    font-weight:bold;
+    color: #444;
+    padding
+}
+
+span.bug_title {
+    font-family: 'verdana', 'arial', 'sans';
+    font-size:12pt;
+}
+
+span.bug_small_details {
+    display: block;
+    font-size: 10pt;
+    color: #666;
+}
+
+span.bug_small_details a {
+    color: #333;
+}
+
+span.normal {
+    background:#BAF46E;
+    padding:3px 9px;
+}
+span.important {
+    background:#FFF673;
+    padding:3px 9px;
+}
+span.urgent {
+    background:#FF7373;
+    padding:3px 9px;
+}
+span.low {
+    background:#e5e5e5;
+    padding:3px 9px;
+}
+
+div.footer {
+    width: 100%;
+    border-top: 1px solid #444;
+    text-align:center;
+    font-size:9pt;
+    color: #777;
 }
 
 

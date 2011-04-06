@@ -3,7 +3,7 @@
 get "/upload",  forward: "/upload.gtpl"
 get "/success", forward: "/success.gtpl"
 get "/failure", forward: "/failure.gtpl"
-
+get "/", forward: "/list.groovy"
 
 get "/add", forward: "/add.gtpl"
 get "/list", forward: "/list.groovy"
