@@ -1,0 +1,12 @@
+
+bugsheet { [bug_k, ... }
+
+bug { status, title, description, priority, reporter, createtime, updatedtime }
+
+tag { label }
+
+bugtags { bug_k, ["tag"], ... } <-- note the plural "s"
+
+comment { bug_k, email, url, body }
+
+

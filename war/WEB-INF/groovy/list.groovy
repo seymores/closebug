@@ -2,7 +2,7 @@ import com.google.appengine.api.datastore.*
 import static com.google.appengine.api.datastore.FetchOptions.Builder.*
 
 
-System.out.println params
+//System.out.println params
 
 def query = new Query("bug")
 query.addSort("createDate", Query.SortDirection.DESCENDING)

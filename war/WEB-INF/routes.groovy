@@ -7,6 +7,7 @@ get "/", forward: "/list.groovy"
 
 get "/add", forward: "/add.gtpl"
 get "/list", forward: "/list.groovy"
+get "/info/@id", forward: "/info.groovy?id=@id"
 
 post "/create", forward: "/create.groovy"
 
