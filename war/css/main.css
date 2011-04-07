@@ -75,7 +75,7 @@ a:hover.button{
 }
 
 .add{
-    background:url(img/add.gif) no-repeat 10px 8px;
+    background:10px 8px;
     text-indent:40px;
     display:block;
 }
@@ -110,18 +110,18 @@ tr.even {
 td.mark_row {
     vertical-align:middle;
     font-weight:bold;
-    color: #444;
+    color: #333;
     padding
 }
 
 span.bug_title {
     font-family: 'verdana', 'arial', 'sans';
-    font-size:12pt;
+    font-size:11pt;
 }
 
 span.bug_small_details {
     display: block;
-    font-size: 10pt;
+    font-size: 9pt;
     color: #666;
 }
 
@@ -132,18 +132,26 @@ span.bug_small_details a {
 span.normal {
     background:#BAF46E;
     padding:3px 9px;
+    border-radius: 5px;
+    font-size:8pt;
 }
 span.important {
     background:#FFF673;
     padding:3px 9px;
+    border-radius: 5px;
+    font-size:8pt;
 }
 span.urgent {
     background:#FF7373;
     padding:3px 9px;
+    border-radius: 5px;
+    font-size:8pt;
 }
 span.low {
     background:#e5e5e5;
     padding:3px 9px;
+    border-radius: 5px;
+    font-size:8pt;
 }
 
 div.footer {
@@ -151,7 +159,13 @@ div.footer {
     border-top: 1px solid #444;
     text-align:center;
     font-size:9pt;
-    color: #777;
+    color: #666;
 }
 
+div.pretty_shadow {
+    width: 100%;
+    box-shadow:-1px 1px 5px #222;    
+    height:1px;
+    background: #666;
+}
 

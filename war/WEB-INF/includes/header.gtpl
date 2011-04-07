@@ -22,6 +22,7 @@
     </head>
     <body>
         
+        <div class="pretty_shadow"> </div>
         <div class="nav_bar">
             <div class="container_12">
                 <div class="grid_4 logo">CloseBug</div>
