@@ -8,7 +8,7 @@
     <div class="clear section_header"></div>
     <div class="container_12">
 
-        <div class="grid_9"><h1>Open Bugs</h1></div>
+        <div class="grid_9"><h1>Open Bugs - ${request.bugsheet?.title ?: "CloseBug Dev Project"}</h1></div>
         <div class="grid_3">
         </div>
 

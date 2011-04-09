@@ -11,4 +11,6 @@ bug.lastUpdated = new Date()
 bug.status = "open" //open,accepted,close,invalid
 bug.save()
 
+memcache.delete('firstpage')
+
 redirect "/list"
