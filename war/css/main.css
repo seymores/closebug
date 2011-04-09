@@ -3,6 +3,7 @@ body {
 	margin: 0px;
     background: #f5f5f5;
     min-height: 600px;
+    color:#333;
 }
 
 h1 {
@@ -169,3 +170,10 @@ div.pretty_shadow {
     background: #666;
 }
 
+table.bug_details td {
+    padding: 5px;
+}
+
+p.bug_details {
+    font-size:12pt;
+}

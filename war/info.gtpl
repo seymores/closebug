@@ -6,27 +6,36 @@
     def bug = request.bug
 %>
 
-    <div class="containter_12">
+    <div class="clear section_header"></div>
+    <div class="container_12">
 
-        <div class="grid_12">
+        <div class="grid_9">
             <h1>${bug.title}</h1>
-            <table>
+        </div>
+        <div class="grid_3"> </div>
+        <div class="grid_9">
+            <table class="bug_details">
                 <tr>
-                    <td> ${bug?.reporter ?: "Anonymous"} </td>
+                    <td> Reported by ${bug?.reporter ?: "Anonymous"} </td>
 
-                    <td> ${bug.createDate} </td>
+                    <td> ${formatter.format bug?.createDate} </td>
 
-                    <td> ${bug?.priority ?: "Normal"} </td>
+                    <td class="mark_row">
+                       <span class="${bug.priority?:'normal'}"> ${bug.priority? bug.priority?.capitalize() : "Normal"} </span>
+                    </td>
                     
                     <td> ${bug?.status?: "Open"} </td>
 
                 </tr>
             </table>
-            <p>
+            <p  class="bug_details" style="padding-right:1.5em">
                 ${bug.desc}
             </p>
         </div>
         
+        <div class="grid_3">
+        tags
+        </div>
 
     </div>
 
