@@ -24,7 +24,7 @@
                        <span class="${bug.priority?:'normal'}"> ${bug.priority? bug.priority?.capitalize() : "Normal"} </span>
                     </td>
                     
-                    <td> ${bug?.status?: "Open"} </td>
+                    <td> <span class="${bug.status?:'open'}">${bug?.status?: "Open"}</span> </td>
 
                 </tr>
             </table>

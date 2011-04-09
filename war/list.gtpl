@@ -35,7 +35,7 @@
                             <span class="bug_title"><a href="/info/${bug.key.id}">#${bug?.key.id}</a></span>
                         </td>
                         <td>
-                            <span class="bug_title"> <a href="/info/${bug.key.id}">${bug?.title}</a> </span>
+                            <span class="bug_title"> <a href="/${bug.key.id}">${bug?.title}</a> </span>
                             <span class="bug_small_details"><a href="#">${bug.reporter?: "Anonymous"}</a>
                              - ${ formatter.format bug?.createDate }, 0 comments </span>
                         </td>
@@ -45,7 +45,7 @@
                         </td>
                         
                         <td class="mark_row">
-                            ${bug.status ? bug.status?.capitalize() : "Open"}
+                            <span class="${bug.status?:'open'}">${bug.status ? bug.status?.capitalize() : "Open"}</span>
                         </td>
                     </tr>
                     <%
