@@ -37,6 +37,7 @@
     </head>
     <body>
         
+        <div class="pretty_top"> </div>
         <div class="pretty_shadow"> </div>
         <div class="nav_bar">
             <div class="container_12">

@@ -44,7 +44,7 @@
                            <span class="${bug.priority?:'normal'}"> ${bug.priority? bug.priority?.capitalize() : "Normal"} </span>
                         </td>
                         
-                        <td class="mark_row">
+                        <td class="mark_row" style="display:none">
                             <span class="${bug.status?:'open'}">${bug.status ? bug.status?.capitalize() : "Open"}</span>
                         </td>
                     </tr>
