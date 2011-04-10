@@ -37,11 +37,11 @@
     </head>
     <body>
         
-        <div class="pretty_shadow"> </div>
         <div class="nav_bar">
             <div class="container_12">
                 <div class="grid_4 logo">CloseBug</div>
                 <div class="grid_8" style="text-align:right">Login | Register | Front Door</div>
             </div>
         </div>
+        <div class="decoration_bar"> </div>
 
