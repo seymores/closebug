@@ -6,7 +6,7 @@ body {
     color:#333;
 }
 
-h1 {
+h1, h3, h6 {
 	color: #619A00;
 }
 
@@ -216,4 +216,9 @@ table.bug_details td {
 
 p.bug_details {
     font-size:12pt;
+}
+
+div.solution_details {
+    font-size:13pt;
+    color:#555;
 }

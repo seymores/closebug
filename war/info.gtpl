@@ -4,6 +4,7 @@
 
     def formatter = new PrettyTime()
     def bug = request.bug
+    def resolution = request.resolution
 %>
 
     <div class="clear section_header"></div>
@@ -34,7 +35,18 @@
             </p>
 
             <div class="grid_9">
-                <form action="/resolve" method="post">
+
+                <% if (resolution) { %>
+                <div class="solution_details">
+                    <h6>Fix</h6>
+                    <p>${resolution.fixDescription}</p>
+                    
+                    <h6>Prevention fix</h6>
+                    <p>${resolution.preventionDescription}</p>
+                </div>
+                <% } else { %>
+
+                <form action="/resolve" method="post" style="display:${resolution?'none':''}">
                         <input type="hidden" name="id" value="${bug.key.id}" />
                         <ul class="form">
                             
@@ -57,6 +69,8 @@
 
                     </ul>
                 </form>
+
+                <% } %>
                 
             </div>
         </div>

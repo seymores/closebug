@@ -19,6 +19,7 @@ if (bug.resolution) {
 } else {
     resolution = new Entity("resolution")
     resolution.createDate = new Date()
+    resolution.save()
     bug.resolution = resolution.key.id
 }
 

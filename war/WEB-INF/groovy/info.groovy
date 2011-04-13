@@ -17,6 +17,12 @@ System.out.println params
 
 def bug = datastore.get(key)
 
+if (bug.resolution) {
+    def rKey = KeyFactory.createKey("resolution", bug.resolution )
+    def resolution = rKey? datastore.get( rKey ) : null
+    request.resolution = resolution
+}
+
 request.bug = bug
 
 //System.out.println bugs
