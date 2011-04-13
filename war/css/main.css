@@ -222,3 +222,22 @@ div.solution_details {
     font-size:13pt;
     color:#555;
 }
+
+.clearfix {
+  clear: both;
+  font-size: 1px;
+   height: 1px; 
+  display: block; 
+  visibility: hidden;
+}
+
+.urgent:after { 
+  content:'.'; 
+  font-size: 1px; 
+  height: 1px; 
+  display: block; 
+  visibility: hidden;
+}
+
+    
+

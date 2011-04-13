@@ -15,21 +15,16 @@
         </div>
         <div class="grid_3"> </div>
         
+
         <div class="grid_9">
-            <table class="bug_details">
-                <tr>
-                    <td> Reported by ${bug?.reporter ?: "Anonymous"} </td>
 
-                    <td> ${formatter.format bug?.createDate} </td>
+            <div style="margin-bottom:10px">
+                Reported by ${bug?.reporter ?: "Anonymous"}, 
+                ${formatter.format bug?.createDate} 
+               <span class="${bug.priority?:'normal'}"> ${bug.priority? bug.priority?.capitalize() : "Normal"} </span>
+                <span class="${bug.status?:'open'}"> ${bug?.status?: "Open"} </span> 
+            </div>
 
-                    <td class="mark_row">
-                       <span class="${bug.priority?:'normal'}"> ${bug.priority? bug.priority?.capitalize() : "Normal"} </span>
-                    </td>
-                    
-                    <td> <span class="${bug.status?:'open'}">${bug?.status?: "Open"}</span> </td>
-
-                </tr>
-            </table>
             <p  class="bug_details" style="padding-right:1.5em">
                 ${bug.desc}
             </p>
