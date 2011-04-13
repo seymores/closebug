@@ -181,6 +181,14 @@ span.closed {
     color:#e5e5e5;
 }
 
+span.resolved {
+    background:#000;
+    padding:3px 9px;
+    border-radius: 5px;
+    font-size:8pt;
+    color:#e5e5e5;
+}
+
 div.footer {
     width: 100%;
     border-top: 1px solid #444;

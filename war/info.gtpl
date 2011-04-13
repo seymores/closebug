@@ -13,6 +13,7 @@
             <h1>${bug.title}</h1>
         </div>
         <div class="grid_3"> </div>
+        
         <div class="grid_9">
             <table class="bug_details">
                 <tr>
@@ -31,6 +32,33 @@
             <p  class="bug_details" style="padding-right:1.5em">
                 ${bug.desc}
             </p>
+
+            <div class="grid_9">
+                <form action="/resolve" method="post">
+                        <input type="hidden" name="id" value="${bug.key.id}" />
+                        <ul class="form">
+                            
+                            <li class="form">
+                                <label class="form" id="description" for="fix"> 
+                                What is the immediate fix? </label>
+                                <textarea name="fix"></textarea>
+                            </li>
+                            
+                            <li class="form"> 
+                                <label class="form" for="priority">How to prevent this bug from happening again?</label>
+                                <textarea name="prevention"></textarea>
+                            </li>
+                            
+                            <li class="form">
+                                <input type="submit" value="Submit" class="form_submit">
+                                or 
+                                <a href="/list">Cancel</a>
+                            </li>
+
+                    </ul>
+                </form>
+                
+            </div>
         </div>
         
         <div class="grid_3">
