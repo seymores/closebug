@@ -59,7 +59,7 @@
         </div>
 
         <div class="grid_3"> 
-            <div class="button"><a href="/add" class="button"><span class="add">New Bug</span></a></div>
+            <div class="i2Style"><a href="/add" class="bxxutton">New Bug</a></div>
         </div>
 
     </div>
