@@ -37,7 +37,7 @@
                         <td>
                             <span class="bug_title"> <a href="/${bug.key.id}">${bug?.title}</a> </span>
                             <span class="bug_small_details"><a href="#">${bug.reporter?: "Anonymous"}</a>
-                             - ${ formatter.format bug?.createDate }, 0 comments </span>
+                             - ${ formatter.format bug?.createDate }, ${bug.comments? bug.comments?.count() + 'comments': ''} </span>
                         </td>
 
                         <td class="mark_row">

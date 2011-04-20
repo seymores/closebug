@@ -13,6 +13,9 @@ get "/@id", forward: "/info.groovy?id=@id"
 post "/create", forward: "/create.groovy"
 post "/resolve", forward: "/resolve.groovy"
 
+post "/comment/create", forward: "/comment/create.groovy"
+post "/comment/delete", forward: "/comment/delete.groovy"
+
 get "/@sheetkey/add", forward: "/add.gtpl?sheetkey=@sheetkey"
 
 get "/favicon.ico", redirect: "/images/favicon.png"

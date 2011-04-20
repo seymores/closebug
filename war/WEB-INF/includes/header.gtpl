@@ -42,7 +42,7 @@
         <div class="pretty_shadow"> </div>
         <div class="nav_bar">
             <div class="container_12">
-                <div class="grid_4 logo"><font style="color:#2779DC">Close</font><font style="color:#619A00">Bug</font></div>
+                <div class="grid_4 logo"><a href="/"><font style="color:#2779DC">Close</font><font style="color:#619A00">Bug</font></a></div>
                 <div class="grid_8" style="text-align:right">Login | Register | Front Door</div>
             </div>
         </div>
