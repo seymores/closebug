@@ -1,4 +1,18 @@
-<!-- Indices written at Wed, 20 Apr 2011 15:14:03 UTC -->
+<!-- Indices written at Sun, 24 Apr 2011 05:44:08 UTC -->
 
-<datastore-indexes/>
+<datastore-indexes>
 
+    <!-- Used 4 times in query history -->
+    <datastore-index kind="bug" ancestor="false" source="auto">
+        <property name="status" direction="asc"/>
+        <property name="status" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="bug" ancestor="false" source="auto">
+        <property name="status" direction="asc"/>
+        <property name="createDate" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>
